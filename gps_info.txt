@@ -48,3 +48,8 @@ Where:
      230394       Date - 23rd of March 1994
      003.1,W      Magnetic Variation
      *6A          The checksum data, always begins with * 
+
+https://en.wikipedia.org/wiki/Differential_GPS
+
+Differential Global Positioning System (DGPS) is an enhancement to Global Positioning System that provides improved location accuracy, from the 15-meter nominal GPS accuracy to about 10 cm in case of the best implementations.
+DGPS uses a network of fixed ground-based reference stations to broadcast the difference between the positions indicated by the GPS satellite systems and the known fixed positions. These stations broadcast the difference between the measured satellite pseudoranges and actual (internally computed) pseudoranges, and receiver stations may correct their pseudoranges by the same amount. The digital correction signal is typically broadcast locally over ground-based transmitters of shorter range.

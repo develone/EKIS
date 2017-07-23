@@ -16,3 +16,7 @@ hist(x(1:41913,5))
 title 'LONGITUDE W'
 std(x(1:41913,5))
 std_long = std(x(1:41913,5))
+
+figure
+hist(x(1:81596,8))
+title 'NUMBER OF SAT'
