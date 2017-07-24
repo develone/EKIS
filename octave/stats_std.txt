@@ -1,6 +1,16 @@
-std_elev =  5.8632
-std_lat =  0.0015637
-std_long =  0.0016972
+std_elev =  5.3471
+mean_elev =  1195.7
+min_elev =  1172.8
+max_elev =  1212.9
+std_lat =  0.0015205
+mean_lat =  3145.6
+min_lat =  3145.6
+max_lat =  3145.6
+ans =  0.0018968
+std_long =  0.0018968
+mean_long =    1.0621e+04
+min_long =    1.0621e+04
+max_long =    1.0621e+04
 
 
 
