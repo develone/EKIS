@@ -11,6 +11,7 @@ std_elev = std(elev)
 mean_elev = mean(elev)
 min_elev = min(elev)
 max_elev = max(elev)
+avg_elev(x) = mean_elev;
 
 figure
 lat = m(x,3);
@@ -20,6 +21,7 @@ std_lat = std(lat)
 mean_lat = mean(lat)
 min_lat = min(lat)
 max_lat = max(lat)
+avg_lat(x) = mean_lat;
 
 figure
 long = m(x,5);
@@ -30,26 +32,27 @@ std_long = std(long)
 mean_long = mean(long)
 min_long = min(long)
 max_long = max(long)
+avg_long(x) = mean_long;
 
 figure
 hist(m(x,8))
 title 'NUMBER OF SAT'
 
 figure
-plot(x,elev)
+plot(x,elev,'b',x,avg_elev,'r')
 title 'ELEVATION m'
-xlabel 'sample'
-ylabel 'elev' 
+xlabel 'SAMPLES'
+ylabel 'ELEVATION' 
 
 figure
-plot(x,lat)
+plot(x,lat,'b',x,avg_lat,'r')
 title 'LATITUDE'
-xlabel 'sample'
-ylabel 'latv' 
+xlabel 'SAMPLES'
+ylabel 'LATITUDE' 
 
 figure
-plot(x,long)
+plot(x,long,'b',x,avg_long,'r')
 title 'LONGITUDE'
-xlabel 'sample'
-ylabel 'long' 
+xlabel 'SAMPLES'
+ylabel 'LONGITUDE' 
 
