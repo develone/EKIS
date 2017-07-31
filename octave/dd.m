@@ -29,7 +29,21 @@ avg_llong_dd(x) = avg_llong_dd;
 figure
 plot(x,lat_dd,'b',x,avg_lat_dd,'r')
 title 'LATITUDE DD'
+title 'LATITUDE'
+xlabel 'SAMPLES'
+ylabel 'LATITUDE'
 
 figure
 plot(x,llong_dd,'b',x,avg_llong_dd,'r')
 title 'LONGITUDE DD'
+title 'LONGITUDE'
+xlabel 'SAMPLES'
+ylabel 'LONGITUDE' 
+
+figure
+hist(lat_dd)
+title 'LATITUDE DD'
+
+figure
+hist(llong_dd)
+title 'LATITUDE DD'
