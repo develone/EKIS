@@ -12,5 +12,10 @@ mean_long =    1.0621e+04
 min_long =    1.0621e+04
 max_long =    1.0621e+04
 
-
+max_lat_dd =  31.760
+min_lat_dd =  31.759
+avg_lat_dd =  31.759
+max_llong_dd =  106.34
+min_llong_dd =  106.34
+avg_llong_dd =  106.34
 
