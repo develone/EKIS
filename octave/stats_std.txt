@@ -19,3 +19,11 @@ max_llong_dd =  106.34
 min_llong_dd =  106.34
 avg_llong_dd =  106.34
 
+std_utm_easting =  2.9958
+std_utm_northing =  2.8302
+mean_lat_dd =    3.7287e+05
+min_lat_dd =  372857
+max_lat_dd =  372880
+mean_long_dd =    3.5145e+06
+min_long_dd =  3514539
+max_long_dd =  3514563
