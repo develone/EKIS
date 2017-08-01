@@ -1,5 +1,3 @@
-package com.mkyong.csv;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -9,7 +7,7 @@ public class CSVReader {
 
     public static void main(String[] args) {
 
-        String csvFile = "/Users/mkyong/csv/country.csv";
+        String csvFile = "../../octave/gps_1.csv";
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -20,9 +18,9 @@ public class CSVReader {
             while ((line = br.readLine()) != null) {
 
                 // use comma as separator
-                String[] country = line.split(cvsSplitBy);
+                String[] lat_long = line.split(cvsSplitBy);
 
-                System.out.println("Country [code= " + country[4] + " , name=" + country[5] + "]");
+                System.out.println("Lat dd= " + lat_long[2] + " , Long dd=" + lat_long[4]);
 
             }
 
