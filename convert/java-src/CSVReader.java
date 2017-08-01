@@ -11,7 +11,9 @@ public class CSVReader {
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
-
+        String utm;
+        double lat,llong;
+		CoordinateConversion cc = new CoordinateConversion();
         try {
 
             br = new BufferedReader(new FileReader(csvFile));
@@ -20,7 +22,13 @@ public class CSVReader {
                 // use comma as separator
                 String[] lat_long = line.split(cvsSplitBy);
 
-                System.out.println("Lat dd= " + lat_long[2] + " , Long dd=" + lat_long[4]);
+                //System.out.println("Lat dd= " + lat_long[2] + " , Long dd=" + lat_long[4]);
+                lat = Double.parseDouble(lat_long[2]);
+                llong = Double.parseDouble(lat_long[4]);
+                llong = (-1)*llong;
+                //System.out.println(lat+ " "+ llong);
+                utm = cc.latLon2UTM(lat, llong);
+                System.out.println(utm);
 
             }
 
